@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubens Matos | Fullstack Senior</title>
+    <meta
+      name="description"
+      content="Portfólio profissional de Rubens Matos, Engenheiro de Software e Desenvolvedor Fullstack Sênior."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-shape shape-a"></div>
+    <div class="background-shape shape-b"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home">Rubens Matos</a>
+      <nav>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero reveal">
+        <p class="tag">Engenheiro de Software | Fullstack Senior</p>
+        <h1>Arquitetura, codigo e entrega real para produtos web em escala.</h1>
+        <p class="subtitle">
+          Atuacao principal em PHP, Python e Node.js no back-end, com React e Vue no front-end,
+          integracoes de APIs e infraestrutura AWS.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="../docs/CURRICULO_RUBENS_MATOS.md">Ver curriculo</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/rubens-matos/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+
+      <section class="grid reveal" id="expertise">
+        <article class="card">
+          <h2>Back-end Engineering</h2>
+          <p>APIs robustas, modelagem de regras de negocio e integracoes entre sistemas.</p>
+          <ul>
+            <li>PHP, Python, Node.js</li>
+            <li>REST APIs e arquitetura web</li>
+            <li>Qualidade de codigo e observabilidade</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Front-end Product</h2>
+          <p>Interfaces modernas para operacao de negocio, com foco em performance e UX objetiva.</p>
+          <ul>
+            <li>React e Vue</li>
+            <li>Dashboards e paineis administrativos</li>
+            <li>Componentizacao e escalabilidade</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Cloud & Delivery</h2>
+          <p>Implantacao e sustentacao de aplicacoes em nuvem, com foco em confiabilidade.</p>
+          <ul>
+            <li>Infraestrutura em AWS</li>
+            <li>Deploy e manutencao continua</li>
+            <li>Apoio tecnico para times remotos</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="projects reveal" id="projects">
+        <div class="section-title">
+          <h2>Projetos em Destaque</h2>
+          <p>Estruturados para demonstrar capacidade de entrega end-to-end.</p>
+        </div>
+        <div class="project-list">
+          <article>
+            <h3>Python Public API</h3>
+            <p>API em Python consumindo endpoint publico sem autenticacao, com filtros e fallback.</p>
+            <span>Python | HTTP APIs | Testes</span>
+            <a href="https://github.com/RubensMatos/python-public-api" target="_blank" rel="noreferrer">Ver repositorio</a>
+          </article>
+          <article>
+            <h3>PHP CRUD API</h3>
+            <p>CRUD completo em PHP com persistencia SQLite/JSON, validacao e smoke test.</p>
+            <span>PHP 8.3 | API REST | Arquitetura limpa</span>
+            <a href="https://github.com/RubensMatos/php-crud-api" target="_blank" rel="noreferrer">Ver repositorio</a>
+          </article>
+          <article>
+            <h3>LeadOps Dashboard React</h3>
+            <p>Painel de pipeline comercial com Kanban, filtros e metricas de conversao.</p>
+            <span>React | Product UI | Operacao comercial</span>
+            <a href="https://github.com/RubensMatos/react-leadops-dashboard" target="_blank" rel="noreferrer">Ver repositorio</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="reveal">
+      <p>Disponivel para projetos remotos de desenvolvimento fullstack e engenharia de software.</p>
+      <div>
+        <a href="mailto:rubens.matos.dev@gmail.com">rubens.matos.dev@gmail.com</a>
+        <a href="https://www.linkedin.com/in/rubens-matos/" target="_blank" rel="noreferrer">linkedin.com/in/rubens-matos</a>
+      </div>
+      <small>© <span id="year"></span> Rubens Matos</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+:root {
+  --bg: #f6f4ef;
+  --ink: #0f172a;
+  --accent: #d9480f;
+  --accent-deep: #9a3412;
+  --card: rgba(255, 255, 255, 0.76);
+  --line: rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at 8% 0%, #ffd8a8 0%, transparent 42%),
+    radial-gradient(circle at 100% 20%, #bae6fd 0%, transparent 37%), var(--bg);
+  color: var(--ink);
+  font-family: "Sora", sans-serif;
+  line-height: 1.5;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.background-shape {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.shape-a {
+  width: 340px;
+  height: 340px;
+  background: #f97316;
+  top: -110px;
+  right: -80px;
+  filter: blur(36px);
+}
+
+.shape-b {
+  width: 280px;
+  height: 280px;
+  background: #0284c7;
+  bottom: -110px;
+  left: -90px;
+  filter: blur(40px);
+}
+
+.topbar {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.topbar nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.93rem;
+}
+
+main,
+footer {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 3rem 0 2rem;
+}
+
+.tag {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.79rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.hero h1 {
+  margin: 1rem 0 0;
+  font-size: clamp(2rem, 4.6vw, 4.3rem);
+  line-height: 1.04;
+  max-width: 18ch;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  max-width: 63ch;
+  font-size: 1.03rem;
+}
+
+.hero-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.72rem 1.1rem;
+  border-radius: 0.65rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.ghost {
+  border: 1px solid var(--ink);
+  color: var(--ink);
+}
+
+.grid {
+  margin-top: 2.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  backdrop-filter: blur(2px);
+}
+
+.card h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.projects {
+  margin-top: 3.4rem;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.section-title p {
+  margin: 0.4rem 0 1.2rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.project-list article {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  padding: 1rem;
+}
+
+.project-list h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.project-list p {
+  margin: 0.45rem 0;
+}
+
+.project-list span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--accent-deep);
+}
+
+.project-list a {
+  margin-top: 0.55rem;
+  display: inline-block;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 3.2rem;
+  padding: 1.1rem 0 0.2rem;
+  border-top: 1px solid var(--line);
+}
+
+footer div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0.55rem 0;
+}
+
+footer a {
+  color: var(--ink);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
